@@ -3,5 +3,10 @@ language: node_js
 
 addons:
   apt:
+    sources:
+      - debian-sid
     packages:
       - hugo
+
+build:
+  - hugo version
