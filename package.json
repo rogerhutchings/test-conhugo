@@ -1,0 +1,24 @@
+{
+  "name": "test-conhugo",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "getcontent": "c2h content",
+    "getcontentlocal": "c2h content --config contentful.yaml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogerhutchings/test-conhugo.git"
+  },
+  "author": "Roger Hutchings <roger@hutchin.gs> (https://www.rogerhutchin.gs/)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/rogerhutchings/test-conhugo/issues"
+  },
+  "homepage": "https://github.com/rogerhutchings/test-conhugo#readme",
+  "dependencies": {
+    "c2h": "git+https://github.com/rogerhutchings/c2h-test.git"
+  }
+}

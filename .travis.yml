@@ -4,7 +4,7 @@ language: node_js
 node_js:
   - "6"
 
-# Handle git submodules yourself via https://gist.github.com/petrbel/c3bf7e0f59c22a52f534
+# Handle git submodules via https://gist.github.com/petrbel/c3bf7e0f59c22a52f534
 git:
   submodules: false
 
@@ -17,6 +17,7 @@ install:
   - ./hugo_0.18_linux_amd64/hugo_0.18_linux_amd64 version
 
 script:
+  - npm run getcontent
   - ./hugo_0.18_linux_amd64/hugo_0.18_linux_amd64 -v --baseUrl $BASEURL
 
 deploy:
