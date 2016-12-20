@@ -11,10 +11,11 @@ before_install:
 
 install:
   - curl -L https://github.com/spf13/hugo/releases/download/v0.18/hugo_0.18_Linux-64bit.tar.gz | tar xvz
-  - ./hugo_0.18_linux_amd64/hugo_0.18_linux_amd64 version
+  - alias hugo="./hugo_0.18_linux_amd64/hugo_0.18_linux_amd64"
+  - hugo version
 
 script:
-  - ./hugo_0.18_linux_amd64/hugo_0.18_linux_amd64 -v --baseUrl $BASEURL
+  - hugo -v --baseUrl $BASEURL
   - ls -la ./public
 
 deploy:
@@ -25,3 +26,7 @@ deploy:
   bucket: "conhugo"
   acl: public_read
   local_dir: public
+  region: eu-west-2
+
+notifications:
+  email: false
