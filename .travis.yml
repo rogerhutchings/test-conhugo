@@ -14,7 +14,7 @@ install:
   - ./hugo_0.18_linux_amd64/hugo_0.18_linux_amd64 version
 
 script:
-  - ./hugo_0.18_linux_amd64/hugo_0.18_linux_amd64 -v
+  - ./hugo_0.18_linux_amd64/hugo_0.18_linux_amd64 -v --baseUrl $BASEURL
   - ls -la ./public
 
 deploy:
