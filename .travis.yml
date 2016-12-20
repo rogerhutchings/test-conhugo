@@ -6,7 +6,8 @@ install:
   - ./hugo_0.18_linux_amd64/hugo_0.18_linux_amd64 version
 
 script:
-  - ./hugo_0.18_linux_amd64/hugo_0.18_linux_amd64
+  - ./hugo_0.18_linux_amd64/hugo_0.18_linux_amd64 -v
+  - ls -la ./public
 
 deploy:
   skip_cleanup: true
